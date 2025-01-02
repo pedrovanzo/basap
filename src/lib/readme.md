@@ -1,0 +1,1 @@
+GLOBAL general utility code.

@@ -1,0 +1,1 @@
+GLOBAL Code snippets of different functionalities across application.
