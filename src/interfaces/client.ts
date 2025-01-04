@@ -4,25 +4,21 @@ interface ClientData {
     name: String,
     phoneNumber: Number,
     birthDate: Number,
-    Gender: Boolean,
+    gender: 'male' | 'female' | 'other',
     clientCreatedAt: Number,
     clientIsActive: Boolean,
-    clientPaymentOverdueSinceLast: String,
 }
 // Adjacent Objects. They will generate instances every time the Provider registers an entry about a Client.
-interface ClientSession {
-    clientId: ClientData,
-    clientSessionTitle: String,
-    clientSessionType: ClientSessionType,
-    clientSessionDuration: Number,
-    clientSessionStatus: 'scheduled' | 'pending' | 'confirmed' | 'failed' | 'completed'
-}
-interface ClientPaymentEntry {
-    clientId: ClientData,
-    clientPaymentValue: Number,
-    clientPaymentTimestamp: Number
-}
+
+
 // Helper Interfaces
-interface ClientSessionType {
-    clientSessionType: 'only' | 'every' | 'custom'
+
+const foo: ClientData = {
+    id: '1',
+    name: 'Foo',
+    phoneNumber: 123,
+    birthDate: 11021993,
+    gender: 'male',
+    clientCreatedAt: 11042025,
+    clientIsActive: true
 }
