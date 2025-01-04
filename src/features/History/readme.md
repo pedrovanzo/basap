@@ -1,0 +1,1 @@
+Object that reads Client History on certain filters.
