@@ -1,10 +1,19 @@
 interface ClientSession {
     clientId: String,
     clientSessionTitle: String,
-    clientSessionType: ClientSessionType,
+    clientSessionType: ClientSessionTypeValues,
     clientSessionDuration: Number,
     clientSessionStatus: 'scheduled' | 'pending' | 'confirmed' | 'failed' | 'completed'
 }
-interface ClientSessionType {
-    clientSessionType: 'only' | 'every' | 'custom'
+interface ClientSessionTypeValues {
+    clientSessionTypeValues: 'only' | 'every' | 'custom'
+}
+const clientSessionFoo: ClientSession = {
+    clientId: '1',
+    clientSessionTitle: 'Terapia Tipo 1',
+    clientSessionType: {
+        clientSessionTypeValues: 'every'
+    },
+    clientSessionDuration: 123,
+    clientSessionStatus: 'scheduled'
 }

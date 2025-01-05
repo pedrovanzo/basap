@@ -8,11 +8,6 @@ interface ClientData {
     clientCreatedAt: Number,
     clientIsActive: Boolean,
 }
-// Adjacent Objects. They will generate instances every time the Provider registers an entry about a Client.
-
-
-// Helper Interfaces
-
 const foo: ClientData = {
     id: '1',
     name: 'Foo',
