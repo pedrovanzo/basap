@@ -7,8 +7,8 @@ export default function Page() {
     {
       Id: 1,
       Subject: 'Meeting',
-      StartTime: new Date(2023, 1, 15, 10, 0),
-      EndTime: new Date(2023, 1, 15, 12, 30),
+      StartTime: new Date(2023, 1, 15, 9, 0),
+      EndTime: new Date(2023, 1, 15, 10, 30),
     },
   ];
   return (
@@ -18,7 +18,8 @@ export default function Page() {
       <ScheduleComponent
       width={'100%'}
       height={'400px'}
-        selectedDate={new Date(2023, 1, 15)}
+      currentView="Day"
+        selectedDate={data[0].StartTime}
         eventSettings={{
           dataSource: data,
         }}
