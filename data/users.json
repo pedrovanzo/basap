@@ -1,32 +1,38 @@
 [
   {
-    "clientName": "t43264t6",
-    "clientPhone": 43234,
-    "clientBirthDate": "2025-01-09",
-    "clientGender": ""
+    "id": "0",
+    "name": "Primeiro",
+    "birthDate": "2025-01-15",
+    "clientCreatedAt": 11221990,
+    "clientIsActive": true,
+    "gender": "male",
+    "phoneNumber": 123
   },
   {
-    "clientName": "53253425",
-    "clientPhone": 43234,
-    "clientBirthDate": "2025-01-09",
-    "clientGender": ""
+    "id": "1",
+    "name": "Segundo com id",
+    "birthDate": "2025-01-17",
+    "clientCreatedAt": 11221990,
+    "clientIsActive": true,
+    "gender": "female",
+    "phoneNumber": 123456
   },
   {
-    "clientName": "Pedro",
-    "clientPhone": 993921984219,
-    "clientBirthDate": "1993-02-16",
-    "clientGender": ""
+    "id": "2",
+    "name": "Pedro Vanzo",
+    "birthDate": "2025-01-23",
+    "clientCreatedAt": 11221990,
+    "clientIsActive": true,
+    "gender": "male",
+    "phoneNumber": 123
   },
   {
-    "clientName": "321321",
-    "clientPhone": 321,
-    "clientBirthDate": "2025-01-09",
-    "clientGender": ""
-  },
-  {
-    "clientName": "ewq",
-    "clientPhone": 321,
-    "clientBirthDate": "2025-01-09",
-    "clientGender": "2"
+    "id": "3",
+    "name": "Barbara",
+    "birthDate": "2025-01-01",
+    "clientCreatedAt": 11221990,
+    "clientIsActive": true,
+    "gender": "female",
+    "phoneNumber": 789456
   }
 ]

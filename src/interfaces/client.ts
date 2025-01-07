@@ -3,8 +3,8 @@ interface ClientData {
     id: string,
     name: string,
     phoneNumber: number,
-    birthDate: number,
-    gender: 'male' | 'female' | 'other',
+    birthDate: string,
+    gender: string,
     clientCreatedAt: number,
     clientIsActive: boolean,
 }

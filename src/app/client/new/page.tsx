@@ -1,14 +1,26 @@
 "use client";
-import React, { useState } from "react";
+import { useEffect, useState } from 'react';
+import clientArray from './../../../../data/users.json'
 export default function Page() {
+    const [clientId, setClientId] = useState('')
     const [clientName, setClientName] = useState('')
     const [clientPhone, setClientPhone] = useState(0)
     const [clientBirthDate, setClientBirthDate] = useState(Date)
     const [clientGender, setClientGender] = useState('')
     const [message, setMessage] = useState('')
+    useEffect(()=> {
+      setClientId(clientArray.length.toString())
+    }, [clientArray.length])
     const handleClientSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        const user = { clientName, clientPhone, clientBirthDate, clientGender }
+        const id = clientId
+        const name = clientName
+        const birthDate = clientBirthDate
+        const clientCreatedAt = 11221990
+        const clientIsActive = true
+        const gender = clientGender
+        const phoneNumber = clientPhone
+        const user: ClientData = { id, name, birthDate, clientCreatedAt, clientIsActive, gender, phoneNumber }
         try {
             const response = await fetch('/api/save-user', {
                 method: 'POST',
@@ -27,15 +39,6 @@ export default function Page() {
             console.error(error)
             setMessage('Error saving user.')
         }
-    }
-    const foo:ClientData = {
-        id: '1',
-        name: 'Pedro Henrique',
-        phoneNumber: 123,
-        birthDate: 11021993,
-        gender: 'male',
-        clientCreatedAt: 11042025,
-        clientIsActive: true
     }
     return (
     <>
@@ -59,9 +62,9 @@ export default function Page() {
         <span>Gender</span>
         <select value={clientGender} onChange={(e) => setClientGender(e.target.value)} name="clientGender" id="" className="w-full">
             <option hidden>Select</option>
-            <option value="1">Male</option>
-            <option value="2">Female</option>
-            <option value="0">Other</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
         </select>
       </label>
       <button type="submit" className="bg-green-500 w-full mt-4 p-2 text-white text-xl font-bold">Submit</button>
