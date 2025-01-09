@@ -1,7 +1,6 @@
-// import { useState } from 'react'
 import Link from 'next/link'
 import data from './../../../../data/users.json'
-// atribuir objeto ao item de indice igual ao slug
+import DeleteClientButton from './deleteClient'
 export default async function Page({
     params,
 }: {
@@ -10,11 +9,15 @@ export default async function Page({
     const slug = (await params).id
     // const [userState, setUserState] = useState()
     const user = data.find(user => user.id === slug)
+
     return (
     <>
-    <nav className="p-2 bg-purple-500 text-purple-200">
+    <nav className="p-2 bg-purple-500 text-white">
         <h2 className="text-xl">Basap Client Profile</h2>
-        <div><Link href={`/client/update/${user?.id}`}>Update</Link></div>
+        <div className="flex flex-row justify-between items-center">
+            <Link href={`/client/update/${user?.id}`}>Update</Link>
+            <DeleteClientButton slug={slug} />
+        </div>
     </nav>
     <div className="p-2">
       <div className="border-4 border-slate-300 rounded-lg mb-2 p-2">

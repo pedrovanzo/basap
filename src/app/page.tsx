@@ -1,44 +1,7 @@
 "use client"
+import clientMap from './../../data/users.json'
 
 export default function Home() {
-  const clientMap: ClientArray = {
-    clients: [{
-      id: '1',
-      name: 'Pedro Henrique',
-      phoneNumber: 123,
-      birthDate: 11021993,
-      gender: 'male',
-      clientCreatedAt: 11042025,
-      clientIsActive: true
-    },
-    {
-      id: '2',
-      name: 'Francisco Valentim',
-      phoneNumber: 124,
-      birthDate: 11021990,
-      gender: 'male',
-      clientCreatedAt: 6012025,
-      clientIsActive: true
-    },
-    {
-      id: '3',
-      name: 'Maria Vanzo',
-      phoneNumber: 124,
-      birthDate: 11021990,
-      gender: 'male',
-      clientCreatedAt: 6012025,
-      clientIsActive: true
-    },
-    {
-      id: '4',
-      name: 'Barbara de Rezende',
-      phoneNumber: 124,
-      birthDate: 11021990,
-      gender: 'male',
-      clientCreatedAt: 6012025,
-      clientIsActive: true
-    },
-  ]}
   return (
     <>
     <div className="flex flex-row gap-4 items-center px-2 py-1 border-b-8 border-purple-500">
@@ -47,7 +10,7 @@ export default function Home() {
       <div className="text-2xl cursor-pointer">Month</div>
     </div>
     <ul className="flex flex-col">
-      {clientMap.clients.map((item, key)=> {
+      {clientMap.map((item, key)=> {
         return (
           <li key={key} className="flex flex-row gap-2 justify-between leading-none p-2 odd:bg-purple-200">
             <div className="flex flex-row gap-2">

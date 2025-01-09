@@ -31,7 +31,6 @@ export default function RootLayout({
         <footer className="flex flex-col">
           <a href="/">http://localhost:3000/</a>
           <a href="/client/list">http://localhost:3000/client/list</a>
-          <a href="/client/profile">http://localhost:3000/client/profile</a>
           <a href="/client/new">http://localhost:3000/client/new</a>
         </footer>
       </body>

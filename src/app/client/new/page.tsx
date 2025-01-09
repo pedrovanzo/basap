@@ -20,7 +20,7 @@ export default function Page() {
         const clientIsActive = true
         const gender = clientGender
         const phoneNumber = clientPhone
-        const user: ClientData = { id, name, birthDate, clientCreatedAt, clientIsActive, gender, phoneNumber }
+        const user: ClientData = { id, name, birthDate, clientIsActive, gender, phoneNumber }
         try {
             const response = await fetch('/api/save-user', {
                 method: 'POST',

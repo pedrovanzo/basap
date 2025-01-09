@@ -1,12 +1,11 @@
 // Main Client Object.
 interface ClientData {
-    id: string,
-    name: string,
-    phoneNumber: number,
-    birthDate: string,
-    gender: string,
-    clientCreatedAt: number,
-    clientIsActive: boolean,
+    id: string | undefined,
+    name: string | undefined,
+    phoneNumber?: number,
+    birthDate?: string,
+    gender?: string,
+    clientIsActive?: boolean,
 }
 interface ClientArray {
     clients: ClientData[]

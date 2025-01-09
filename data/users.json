@@ -1,38 +1,26 @@
 [
   {
     "id": "0",
-    "name": "Primeiro",
-    "birthDate": "2025-01-15",
-    "clientCreatedAt": 11221990,
+    "name": "Alberforth",
+    "birthDate": "1951-01-11",
     "clientIsActive": true,
     "gender": "male",
-    "phoneNumber": 123
+    "phoneNumber": 978465312
   },
   {
     "id": "1",
-    "name": "Segundo com id",
-    "birthDate": "2025-01-17",
-    "clientCreatedAt": 11221990,
+    "name": "Harry",
+    "birthDate": "2025-01-20",
     "clientIsActive": true,
-    "gender": "female",
-    "phoneNumber": 123456
+    "gender": "other",
+    "phoneNumber": 48764946
   },
   {
     "id": "2",
-    "name": "Pedro Vanzo",
-    "birthDate": "2025-01-23",
-    "clientCreatedAt": 11221990,
-    "clientIsActive": true,
-    "gender": "male",
-    "phoneNumber": 123
-  },
-  {
-    "id": "3",
-    "name": "Barbara",
-    "birthDate": "2025-01-01",
-    "clientCreatedAt": 11221990,
+    "name": "Ginevra Weasley",
+    "birthDate": "2025-03-14",
     "clientIsActive": true,
     "gender": "female",
-    "phoneNumber": 789456
+    "phoneNumber": 7643594676764
   }
 ]
