@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import Link from 'next/link'
 import data from './../../../../data/users.json'
 // atribuir objeto ao item de indice igual ao slug
 export default async function Page({
@@ -13,6 +14,7 @@ export default async function Page({
     <>
     <nav className="p-2 bg-purple-500 text-purple-200">
         <h2 className="text-xl">Basap Client Profile</h2>
+        <div><Link href={`/client/update/${user?.id}`}>Update</Link></div>
     </nav>
     <div className="p-2">
       <div className="border-4 border-slate-300 rounded-lg mb-2 p-2">
